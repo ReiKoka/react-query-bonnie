@@ -10,7 +10,7 @@ async function getTreatments(): Promise<Treatment[]> {
     return data;
   } catch (error) {
     console.error(error);
-    return undefined;
+    throw error;
   }
 }
 
